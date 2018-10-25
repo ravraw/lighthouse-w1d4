@@ -11,18 +11,9 @@ var students = [
 ];
 
 students.sort(function(a, b) {
-  let nameA = a.name;
-  let nameB = b.name;
-  let ageA = a.age;
-  let ageB = b.age;
-
-  if (nameA < nameB) return -1;
-
-  if (nameA > nameB) return 1;
-
-  if (nameA === nameB) return ageB - ageA;
-
-  return 0;
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return b.age - a.age;
 });
 
 console.log(students);
