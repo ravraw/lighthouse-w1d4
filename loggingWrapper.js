@@ -4,7 +4,6 @@ var wrapLog = function(cb, name) {
   /* your code here */
 
   return (...args) => {
-    //console.log(args);
     let [x, y, z] = args;
     let result = cb(...args);
     console.log(`${name} ( ${args} ) => ${result}`);
