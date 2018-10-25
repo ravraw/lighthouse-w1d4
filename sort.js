@@ -11,20 +11,17 @@ var students = [
 ];
 
 students.sort(function(a, b) {
-  var nameA = a.name;
-  var nameB = b.name;
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-  if (nameA === nameB) {
-    if (a.age < b.age) {
-      return 1;
-    }
-    console.log("names r equal");
-  }
+  let nameA = a.name;
+  let nameB = b.name;
+  let ageA = a.age;
+  let ageB = b.age;
+
+  if (nameA < nameB) return -1;
+
+  if (nameA > nameB) return 1;
+
+  if (nameA === nameB) return ageB - ageA;
+
   return 0;
 });
 
