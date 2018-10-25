@@ -1,7 +1,7 @@
 let arr = [1, 10, 2, 5, 9];
 
 let sortedArr = arr.sort((a, b) => a - b);
-console.log(sortedArr);
+//console.log(sortedArr);
 
 var students = [
   { id: 1, name: "bruce", age: 40 },
